@@ -316,7 +316,7 @@ function drawPoster(
   ctx.fillStyle = T.a1;
   ctx.beginPath(); ctx.arc(60 + pW, 33, 4, 0, Math.PI * 2); ctx.fill();
 
-  const ds = new Date(signal.timestamp).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" });
+  const ds = new Date(signal.timestamp ?? Date.now()).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" });
   ctx.fillStyle = "#555555";
   ctx.font = "400 10px \"JetBrains Mono\",monospace";
   ctx.textAlign = "left"; ctx.textBaseline = "middle";
