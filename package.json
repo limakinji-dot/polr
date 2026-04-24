@@ -1,0 +1,36 @@
+{
+  "name": "agent-x",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "@react-three/fiber": "^8.16.8",
+    "@react-three/drei": "^9.109.2",
+    "three": "^0.166.1",
+    "gsap": "^3.12.5",
+    "framer-motion": "^11.3.19",
+    "qrcode": "^1.5.4",
+    "react-latex-next": "^3.0.0",
+    "zustand": "^4.5.4",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/three": "^0.166.0",
+    "@types/qrcode": "^1.5.5",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
