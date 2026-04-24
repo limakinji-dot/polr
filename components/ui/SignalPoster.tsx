@@ -681,7 +681,7 @@ function drawPoster(
     if (candleTimes.length > 0 && signal.timestamp) {
       let minDiff = Infinity;
       candleTimes.forEach((t, idx) => {
-        const diff = Math.abs(t - signal.timestamp);
+        const diff = Math.abs(t - (signal.timestamp ?? Date.now()));
         if (diff < minDiff) { minDiff = diff; entXIdx = idx; }
       });
     }
